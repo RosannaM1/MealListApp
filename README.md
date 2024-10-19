@@ -1,2 +1,0 @@
-# MealListApp
-Technical test
