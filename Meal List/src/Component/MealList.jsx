@@ -16,10 +16,15 @@ const MealList = ({ meals }) => {
   const categorizedMeals = categorizeMeals(meals);
 
   return (
-    //Render a category with his meals
     <div>
+      {/*Render the MealCategory component to show the differents categories with
+      the meals*/}
       {Object.keys(categorizedMeals).map((category) => (
-        <MealCategory key={category} category={category} meals={categorizedMeals[category]} />
+        <MealCategory
+          key={category}
+          category={category}
+          meals={categorizedMeals[category]}
+        />
       ))}
     </div>
   );
